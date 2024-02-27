@@ -1,38 +1,572 @@
 .App {
+  background-image: linear-gradient(#f3f1dc, #fffccd, #fef8ab);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 400px;
+  cursor: pointer;
+}
+
+#img1Left {
+  height: 600px;
+}
+
+/* .flex-container {
+  display: flex;
+  align-items: stretch;
+  padding: 40px;
+  padding-right: 15%;
+} */
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  padding: 40px;
+  padding-right: 15%;
+  width: calc(100% - 40px);
+}
+
+
+.div1 {
+  flex-grow: 1
+}
+
+#para1 {
+  font-weight: 900;
+}
+
+#img2Right {
+  width: 835px;
+  height: 400px;
+}
+
+#para2 {
+  font-size: medium;
+  font-weight: 540;
+}
+
+#para {
+  font-size: medium;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+.bottom1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .border {
+  border: 1px solid rgb(202, 38, 38);
+  margin: 0px 10px 0px 10px;
+} */
+
+#img3Bottom {
+  padding: 0px 90px 0px 120px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.bottom2 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  flex-direction: column;
+}
+
+#para3 {
+  font-size: small;
+}
+
+#para4 {
+  font-size: medium;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.border-right {
+  border-right: 1px solid rgb(237, 47, 47);
+  padding: 3px;
+
+}
+
+.footer {
+  background-color: rgb(237, 47, 47);
+  height: 100px;
+  margin: 10px;
+}
+
+.content {
+  line-height: 25px;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+i {
+  font-size: 30px;
+  background-color: white;
+  color: rgb(237, 47, 47);
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+#tollfree {
   color: white;
+  padding-left: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  color: white;
+  padding-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.App {
+  background-image: linear-gradient(#f3f1dc, #fffccd, #fef8ab);
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 100%;
+  /* Make the logo responsive */
+  max-width: 400px;
+  /* Limit the maximum width */
+  height: auto;
+  /* Maintain aspect ratio */
+  cursor: pointer;
+}
+
+#img1Left {
+  width: 100%;
+  /* Make the image responsive */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+#img2Right {
+  width: 100%;
+  /* Make the image responsive */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.bottom1 {
+  text-align: center;
+}
+
+#img3Bottom {
+  width: 100%;
+  /* Make the image responsive */
+  max-width: 1000px;
+  /* Limit the maximum width */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin: 0 auto;
+  /* Center the image */
+}
+
+.bottom2 {
+  text-align: center;
+}
+
+.footer {
+  background-color: rgb(237, 47, 47);
+  height: 100px;
+  margin: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+#tollfree {
+  color: white;
+  padding-left: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding-left: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    /* Stack the divs vertically */
+    padding: 20px;
+    /* Adjust padding */
   }
-  to {
-    transform: rotate(360deg);
+
+  .div2 {
+    order: -1;
+    /* Move div2 above div1 in the stacking order */
+  }
+
+  #img3Bottom {
+    padding: 0px;
+    /* Remove padding */
+  }
+}
+
+
+
+
+
+
+
+.App {
+  background-image: linear-gradient(#f3f1dc, #fffccd, #fef8ab);
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 100%;
+  /* Make the logo responsive */
+  max-width: 300px;
+  /* Limit the maximum width */
+  height: auto;
+  /* Maintain aspect ratio */
+  cursor: pointer;
+}
+
+#img1Left {
+  width: 100%;
+  /* Make the image responsive */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+#img2Right {
+  width: 100%;
+  /* Make the image responsive */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.bottom1 {
+  text-align: center;
+}
+
+#img3Bottom {
+  width: 100%;
+  /* Make the image responsive */
+  max-width: 1000px;
+  /* Limit the maximum width */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin: 0 auto;
+  /* Center the image */
+}
+
+.bottom2 {
+  text-align: center;
+}
+
+.footer {
+  background-color: rgb(237, 47, 47);
+  height: 100px;
+  margin: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+#tollfree {
+  color: white;
+  padding-left: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding-left: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    /* Stack the divs vertically */
+    padding: 10px;
+    /* Adjust padding */
+  }
+
+  .div2 {
+    order: -1;
+    /* Move div2 above div1 in the stacking order */
+  }
+
+  #img3Bottom {
+    padding: 0px;
+    /* Remove padding */
+  }
+
+  #para1,
+  #para2,
+  #para3,
+  #para4 {
+    font-size: 14px;
+    /* Adjust font size for smaller screens */
+  }
+
+
+  .content {
+    line-height: 20px;
+    /* Adjust line height for smaller screens */
+    font-size: 0.7em;
+    /* Adjust font size for smaller screens */
+  }
+
+  #logo {
+    max-width: 250px;
+    /* Adjust maximum width of logo */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+.icons div {
+  display: flex;
+  align-items: center;
+}
+
+.icons i {
+  font-size: 24px;
+  /* Adjust icon size */
+  margin-right: 5px;
+  /* Add some spacing between icon and text */
+}
+
+#tollfree {
+  color: white;
+  font-size: 14px;
+  /* Adjust font size */
+}
+
+@media screen and (max-width: 768px) {
+  .icons {
+    flex-direction: column;
+    /* Stack the icons vertically */
+    align-items: center;
+    /* Center align the icons and text */
+    padding-top: 10px;
+    /* Adjust top padding */
+  }
+
+  .icons div {
+    margin-bottom: 10px;
+    /* Add some spacing between icon-text pairs */
+  }
+
+  #tollfree {
+    font-size: 12px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .icons i {
+    font-size: 20px;
+    /* Adjust icon size for smaller screens */
+    margin-right: 3px;
+    /* Reduce spacing between icon and text */
   }
 }
