@@ -4,6 +4,9 @@ import img1 from './img1.png';
 import img2 from './img2.png';
 import img3 from './img3.png';
 import 'boxicons/css/boxicons.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
@@ -62,10 +65,11 @@ function App() {
         <div className='icons'>
           <div><i className='bx bxs-phone'></i><span id='tollfree'>Toll free <b>1800 200 1234</b></span></div>
           <div><i className='bx bxl-facebook'></i><a href='https://www.facebook.com/cripumps' target='_blank' rel='noopener noreferrer'>www.facebook.com/cripumps</a></div>
-          <div><i className='bx bx-globe'></i><a href='https://www.crigroups.com/' target='_blank' rel='noopener noreferrer'>www.crigroups.com</a></div>
+          <div><FontAwesomeIcon icon={faGlobe} id='globe'/><a href='https://www.crigroups.com/' target='_blank' rel='noopener noreferrer'>www.crigroups.com</a></div>
         </div>
       </div>
     </div>
+
   );
 }
 
